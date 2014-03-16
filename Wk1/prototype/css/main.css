@@ -1,7 +1,245 @@
 /* Main Css 
 
-font-family: 'Quicksand', sans-serif; /* 
+font-family: 'Quicksand', sans-serif; */
+
+@font-face { 
+	font-family: neo_font;
+	src: url(../fonts/neo.ttf);
+}
+
+.games img{
+	max-width:100%;
+}
+
+html{
+	background: black;
+}
+
+body{
+	position:relative;
+	background: linear-gradient(to bottom, rgba(58,190,239,1) 0%,rgba(0,0,0,1) 25%); /* W3C */
+}
+
+a:link,a:visited,a:active,a:hover{
+	text-decoration: none;
+	color:black;
+}
+
+.roundabout-holder {
+
+	  position:relative;
+	  left:5%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-left:2.7%;
+      margin-top:-5%;
+      margin-bottom:10%;
+      height: 20em;
+      width: 55em;
+   }
+   
+   .roundabout-moveable-item {
+      height: 23.3em;
+      width: 18em;
+      cursor: pointer;
+     -webkit-box-shadow: 0px 0px 67px -7px rgba(255,255,255,0.75);
+ 	 box-shadow: 0px 0px 67px -7px rgba(255,255,255,0.75);
+   }
+   
+   .roundabout-in-focus {
+      cursor: auto;
+   }
 
 
+*{
+	color:white;
+	font-family: neo_font;
+	text-align:center;
 
+}
+
+
+#search{
+	float:left;
+	margin-left:15%;
+	color:white;
+	font-family: neo_font;
+	font-size: 30px;
+	width:400px;
+	height:50px;
+	background: rgba(255, 255, 255, 0.1);
+	-webkit-border-radius: 99px 0px 0px 99px;
+	-moz-border-radius: 99px 0px 0px 99px;
+	border-radius: 99px 0px 0px 99px;
+}
+
+#search input{
+
+}
+
+#search-button{
+	float:left;
+	background: rgba(255, 255, 255, 0.3);
+	font-family: neo_font;
+	font-size:2em;
+	border: 0;
+	width:100px;
+	height:50px;
+	background: rgba(255, 255, 255, 0.30);
+	-webkit-border-radius: 0px 99px 99px 0px;
+	-moz-border-radius: 0px 99px 99px 0px;
+	border-radius: 0px 99px 99px 0px;
+}
+
+#search-button img{
+	position:relative;
+	bottom:68px;
+	right:-10px;
+}
+
+#search-button p{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+	position:relative;
+	bottom:28px;
+	right:20px;
+}
+
+form{
+	font-family: neo_font;
+}
+
+#username,#password{
+	width:150px;
+	height:30px;
+	border-radius: 10px;
+}
+
+.button{
+	text-align:center;
+	font-family: neo;
+	width:30px;
+	height:15px;
+	border-radius: 10px;
+}
+
+.home-link,.game-list-link{
+	display: block;
+	float: left;
+	transition:width .5s,height .5s;
+	width:320px;
+	height:50px;
+	background-color:#ffffff;
+	padding:20px;
+	color:black;
+}
+
+.gamer-link{
+	display: block;
+	float: left;
+	transition: width .5s,height .5s;
+	width:320px;
+	height:80px;
+	background-color:#3abeef;
+	padding:20px;
+
+}
+
+.login,.sign-up{
+	display:none;
+}
+
+nav{
+	font-size: 25px;
+	position:relative;
+
+}
+
+h1{
+	font-family: neo_font;
+}
+.games h1{
+	margin:50px;
+	font-size: 30px;
+	color:white;
+}
+
+#hot-header{
+	margin-top:30px;
+}
+
+.logo{
+	margin-top:-50px;
+	margin-bottom:-80px;
+}
+
+.hot-pic{
+	position:relative;
+	bottom:103px;
+	left:105px;
+	margin-bottom:-20px;
+}
+
+
+/*Mobile landscape*/
+@media screen and (min-width: 480px) and (max-width:797px){
+	html{
+		background:blue;
+	}
+	.roundabout-holder {
+	 left:-15%;
+    }
+   
+}
+/*Mobile portrait size to mobile landscape*/
+@media screen and (max-width:479px){
+	nav{
+		display: none;
+	}
+
+	html{
+		background: none;
+	}
+	.roundabout-holder {
+
+	  position:relative;
+	  right:50%;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-left:1.7%;
+      margin-top:-15%;
+      margin-bottom:10%;
+      height: 25.3em;
+      width: 20em;
+   }
+   
+   .roundabout-moveable-item {
+      height: 24.5em;
+      width: 19em;
+      cursor: pointer;
+     -webkit-box-shadow: 0px 0px 67px -7px rgba(255,255,255,0.75);
+ 	 box-shadow: 0px 0px 67px -7px rgba(255,255,255,0.75);
+   }
+
+   #search{
+   		margin-left:13px;
+   		width:290px;
+ 	}
+
+   #search-button{
+   		width:30px;
+   }
+
+   #search-button img{
+	position:relative;
+	bottom:10px;
+	right:23px;
+}
+
+#search-button p{
+	display:none;
+}
+}
 
