@@ -103,6 +103,15 @@ a:link,a:visited,a:active,a:hover{
 	right:20px;
 }
 
+.filter{
+	float:left;
+	background: rgba(255, 255, 255, 0.3);
+	width:80px;
+	height:50px;
+	border-radius: 10px;
+
+}
+
 form{
 	font-family: neo_font;
 }
