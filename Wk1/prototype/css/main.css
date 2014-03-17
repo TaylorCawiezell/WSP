@@ -59,7 +59,7 @@ a:link,a:visited,a:active,a:hover{
 
 #search{
 	float:left;
-	margin-left:15%;
+	margin-left:25%;
 	color:white;
 	font-family: neo_font;
 	font-size: 30px;
@@ -69,10 +69,6 @@ a:link,a:visited,a:active,a:hover{
 	-webkit-border-radius: 99px 0px 0px 99px;
 	-moz-border-radius: 99px 0px 0px 99px;
 	border-radius: 99px 0px 0px 99px;
-}
-
-#search input{
-
 }
 
 #search-button{
@@ -109,7 +105,8 @@ a:link,a:visited,a:active,a:hover{
 	width:80px;
 	height:50px;
 	border-radius: 10px;
-
+	margin-left:10px;
+	padding:5px
 }
 
 form{
@@ -134,29 +131,59 @@ form{
 	display: block;
 	float: left;
 	transition:width .5s,height .5s;
-	width:320px;
+	width:30%;
 	height:50px;
 	background-color:#ffffff;
 	padding:20px;
 	color:black;
+	padding-bottom:50px;
 }
 
 .gamer-link{
 	display: block;
 	float: left;
 	transition: width .5s,height .5s;
-	width:320px;
+	width:35%;
 	height:80px;
 	background-color:#3abeef;
 	padding:20px;
 
 }
 
+.gamer-link{
+	display: block;
+	float: left;
+	transition: width .5s,height .5s;
+	width:35%;
+	height:80px;
+	background-color:#3abeef;
+	padding:20px;
+
+}
+.gamer-link:hover{
+	height:300px;
+
+}
+
+.home-link:hover,.game-list-link:hover{
+	height:100px;
+
+}
+.about-link,.inc-link,.face-link,.twitter-link{
+	display: block;
+	float: left;
+	width:25%;
+	height:60px;
+	background-color:#3abeef;
+	padding:20px;
+	transition: width .5s,height .5s;
+}
+
 .login,.sign-up{
 	display:none;
 }
 
-nav{
+nav,footer{
 	font-size: 25px;
 	position:relative;
 
@@ -176,8 +203,8 @@ h1{
 }
 
 .logo{
-	margin-top:-50px;
-	margin-bottom:-80px;
+	margin-top:50px;
+	
 }
 
 .hot-pic{
@@ -187,12 +214,67 @@ h1{
 	margin-bottom:-20px;
 }
 
+.top .hot-pic{
+	bottom:98px;
+}
+
+.classic .hot-pic{
+	bottom:115px;
+	left:150px;
+	margin-bottom:-40px;
+}
+
+.buttons{
+	display: none;
+}
+
+.sign-in-m,.filter-m,.sign-m{
+	float:left;
+	background: rgba(255, 255, 255, 0.3);
+	width:80px;
+	height:50px;
+	border-radius: 10px;
+	margin-left:10%;
+	margin-top:2%;
+	padding:5px;
+
+}
+
+.sign-in-m,.sign-m{
+	padding-top:13px;
+}
+
 
 /*Mobile landscape*/
 @media screen and (min-width: 480px) and (max-width:797px){
+	.sign-m{
+		margin-left:4%;
+	}	
+	
+	.sign-in-m{
+		margin-left:8%;
+	}
+
+    .filter-m{
+		
+		border-radius: 10px;
+		margin-left:30%;
+		margin-right:20%;
+		
+	}
+	
+	.filter{
+		display:none;
+	}
+
+	.buttons{
+	display: inline;
+    }
+	
 	html{
 		background:blue;
 	}
+	
 	.roundabout-holder {
 	 left:-15%;
     }
@@ -206,10 +288,21 @@ h1{
 		display: none;
 	}
 
+
+
    
 }
 /*Mobile portrait size to mobile landscape*/
 @media screen and (min-width: 400px) and (max-width:479px){
+
+	.filter{
+		display:none;
+	}
+	
+	.buttons{
+	display: inline;
+    }
+
 	nav{
 		display: none;
 	}
@@ -257,9 +350,34 @@ h1{
 #search-button p{
 	display:none;
 }
+
 }
 
 @media screen and (max-width: 399px){
+	.sign-m{
+		margin-left:4%;
+	}	
+	
+	.sign-in-m{
+		margin-left:4%;
+	}
+
+    .filter-m{
+		
+		border-radius: 10px;
+		margin-left:8%;
+		margin-right:5%;
+		
+	}
+
+	.filter{
+		display:none;
+	}
+	
+	.buttons{
+	display: inline;
+    }
+
 	nav{
 		display: none;
 	}

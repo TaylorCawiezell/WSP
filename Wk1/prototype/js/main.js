@@ -8,6 +8,11 @@ $('#search-button').click(function() {
     return false;
 });
 
+$('#sign-up-button').click(function() {
+    window.location.href = 'sign-up.html';
+    return false;
+});
+
 
 
 
