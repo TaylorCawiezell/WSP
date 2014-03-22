@@ -229,6 +229,7 @@ h1{
 }
 
 .sign-in-m,.filter-m,.sign-m{
+	font-size: 15px;
 	float:left;
 	background: rgba(255, 255, 255, 0.3);
 	width:80px;
@@ -244,9 +245,52 @@ h1{
 	padding-top:13px;
 }
 
+.sign-form input{
+	font-size:20px;
+	text-align: center;
+	width:40%;
+	margin-left:29%;
+	border-radius:10px;
 
+}
+.sign-form{
+	margin-top:5%;
+	text-align: center;
+}
+
+#sign-form-button{
+	width:100px;
+	background: rgba(255, 255, 255, 0.3);
+	font-family: neo_font;
+	font-size:2em;
+	border: 0;
+	width:100px;
+	height:50px;
+	padding:10px;
+}
+
+.result{
+	margin-left:13%;
+}
+.show-result{
+	position: relative;
+	bottom:30px;
+}
 /*Mobile landscape*/
 @media screen and (min-width: 480px) and (max-width:797px){
+		.sign-form{
+		margin-top:20%;
+		text-align: center;
+		margin-left:50px;
+	}
+
+		.sign-form input{
+		text-align: center;
+		width:60%;
+		margin-left:23%;
+		border-radius:10px;
+
+	}
 	.sign-m{
 		margin-left:4%;
 	}	
@@ -294,6 +338,19 @@ h1{
 }
 /*Mobile portrait size to mobile landscape*/
 @media screen and (min-width: 400px) and (max-width:479px){
+	.sign-form{
+	margin-top:100px;
+	text-align: center;
+}
+
+	.sign-form input{
+	font-size:20px;
+	text-align: center;
+	width:80%;
+	margin-left:10%;
+	border-radius:10px;
+
+}
 
 	.filter{
 		display:none;
@@ -301,6 +358,7 @@ h1{
 	
 	.buttons{
 	display: inline;
+
     }
 
 	nav{
@@ -354,6 +412,14 @@ h1{
 }
 
 @media screen and (max-width: 399px){
+	.sign-form input{
+	font-size:20px;
+	text-align: center;
+	width:80%;
+	margin-left:10%;
+	border-radius:10px;
+
+}
 	.sign-m{
 		margin-left:4%;
 	}	

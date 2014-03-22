@@ -4,9 +4,11 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Here are your results.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Go Gamer</title>
-	 <link rel="stylesheet" href="css/foundation.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Go Gamer, Ultimate Game Finder</title>
+	<link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css' />
@@ -15,55 +17,95 @@
 </head>
 
 <body>
+	<div class="wrapper center-text">
 
 	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
+		<nav class="row">
+			<ul class="large-12.centered medium-12.centered small-12.centered columns">
+				<li class="home-link"><a href="index.html">Go Home</a></li>
 				<li>
 					<ul>
-						<li>Go Gamer</li>
-						<li>Login
+						<li class="gamer-link">Game Goers</li>
+						<li class="login">Login
 							<form>
-        						Login
-        						Username <input type="text" name="email"><br>
-        						Password <input type="password" name="pass"><br>
-        						<input class="button" type="submit" value="GO">
+        						Username <input id='username' type="text" name="email">
+        						Password <input id='password' type="password" name="pass">
+        						<input class="button" type="submit" value="Go">
     						</form></li>
-						<li><a href="sign-up.html">Sign up</a></li>
+						<li class="sign-up"><a href="sign-up.html">Sign up</a></li>
 					</ul>
 				</li>
-				<li><a href="game-list.html">Go Game Lists</a></li>
+				<li class="game-list-link"><a href="game-list.html">Go Game Lists</a></li>
 			</ul>
 		</nav>
 	</header>
-	
-	<section class="results">
 
+	<section class="buttons">
+		<button class="sign-in-m"><h1>Sign In</h1></button>
+		<button class="filter-m"><img src='img/filter.png' alt="titan fall"/></button>
+		<button class="sign-m" id="sign-up-button"><h1>Sign Up</h1></button>
 	</section>
-	
-	<section class="search bar">
-		<input type="text" />
-		<input type="submit" value="GO!">
-		<img class="logo" src='img/logo' alt="Go Gamer"/>
+
+	<section class="search row">
+		<article class="large-12.centered">
+		<img class="logo" src='img/logo.png' alt="Go Gamer"/>
+		<form class="search-form">
+		<input id='search' type="text" size="100"/>
+		<button id='search-button'><p>G</p><img src='img/search.png' alt="GO"/></button>
+		<button class="filter"><img src='img/filter.png' alt="titan fall"/></button>
+		</form>
+		</article>
 	</section>
+
+	<section class="games result row">
+		<h1 class="show-result">Results for</h1>
+			<ul>
+   				<li><img src='img/titanfall.jpg' alt="titan fall"/></li>
+   				<li><img src='img/mario.jpg' alt="Go Gamer"/></li>
+   				<li><img src='img/strider.png' alt="Go Gamer"/></li>
+   				<li><img src='img/darksouls.jpg' alt="Go Gamer"/></li>
+   				<li><img src='img/battlefield.jpg' alt="Go Gamer"/></li>
+   				<li><img src='img/yoshi.jpg' alt="Go Gamer"/></li>
+			</ul>
+		</aside>
+	</section>
+
+
 	
 
-	<footer>
+	<footer class="row">
 		<ul>
-			<li>Top</li>
-			<li>About us</li>
-			<li>Acme INC.</li>
-			<li>Face Book</li>
-			<li>Twitter</li>
+			<li class="about-link">About us</li>
+			<li class="inc-link">Acme INC.</li>
+			<li class="face-link">Face Book</li>
+			<li class="twitter-link">Twitter</li>
 		</ul>
 	</footer>
-
+ 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
+    <script src="js/jquery.js"></script>
+<script src="js/jquery.roundabout.js"></script>
+<script src="js/jquery.roundabout-shapes.js"></script>
+<script src="js/jquery.event.drag-2.2.js"></script>
+<script src="js/jquery.event.drop-2.2.js"></script>
+<script>
+   $(document).ready(function() {
+
+      $('.games ul').roundabout({
+      	 enableDrag: true,
+      	 autoplay: false,
+         autoplayDuration: 2000,
+         autoplayPauseOnHover: true
+      });
+   });
+</script>
+<script src="js/main.js"></script>
+</div>
 </body>
 
 </html>
