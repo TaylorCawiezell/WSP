@@ -22,6 +22,46 @@ a:link,a:visited,a:active,a:hover{
 	color:black;
 }
 
+.rating{
+	padding-bottom:3px;
+	transition: width .5s,height .5s;
+	bottom:20%;
+	left:5%;
+	position:relative;
+	width:70px;
+	height:50px;
+	background: white;
+	border-radius: 10px;
+	color:#3abeef;
+}
+.rating p{
+	text-align:left;
+	position:relative;
+	color:#3abeef;
+	font-size:2.5em;
+}
+
+.games li:hover .rating{
+	width:90%;
+}
+
+.favorite-banner{
+	bottom:58%;
+	position:absolute;
+	height:170px;
+	right:60%;
+}
+
+.details{
+	font-size:1.5em;
+	color:#3abeef;
+	bottom:4.5%;
+	position:absolute;
+	z-index:2;
+	height:40px;
+	left:30%;
+}
+
 .roundabout-holder {
 
 	  position:relative;
@@ -37,6 +77,8 @@ a:link,a:visited,a:active,a:hover{
    }
    
    .roundabout-moveable-item {
+   	position:relative;
+   	z-index:1;
       height: 23.3em;
       width: 18em;
       cursor: pointer;
