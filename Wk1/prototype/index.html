@@ -25,10 +25,11 @@
 		<nav class="row">
 			<ul class="large-12.centered medium-12.centered small-12.centered columns">
 				<li class="home-link"><a href="index.html">Go Home</a></li>
-				<li>
+				<li class='game-goer'>
 					<ul>
 						<li class="gamer-link">Game Goers</li>
-						<li class="login">Login
+						<li class="login">
+							<p>Login</p>
 							<form>
         						Username <input id='username' type="text" name="email">
         						Password <input id='password' type="password" name="pass">
@@ -43,9 +44,14 @@
 	</header>
 
 	<section class="buttons">
-		<button class="sign-in-m"><h1>Sign In</h1></button>
+		<button class="sign-in-m">Sign In</button>
 		<button class="filter-m"><img src='img/filter.png' alt="titan fall"/></button>
-		<button class="sign-m" id="sign-up-button"><h1>Sign Up</h1></button>
+		<button class="sign-m" id="sign-up-button">Sign Up</button>
+		<form>
+        	Username <input id='user' type="text" name="email">
+        	Password <input id='pass' type="password" name="pass">
+        	<input class="button" type="submit" value="Go">
+    		</form>
 	</section>
 
 	<section class="search row">
@@ -53,11 +59,48 @@
 		<img class="logo" src='img/logo.png' alt="Go Gamer"/>
 		<form class="search-form">
 		<input id='search' type="text" size="100"/>
-		<button id='search-button'><p>G</p><img src='img/search.png' alt="GO"/></button>
-		<button class="filter"><img src='img/filter.png' alt="titan fall"/></button>
+		<button id='search-button'><div>G</div><img src='img/search.png' alt="GO"/></button>
+		<div class='filter'><img src='img/filter.png' alt="filters"/></div>
 		</form>
 		</article>
 	</section>
+
+	<!--filer search results form-->
+		<div class='filter-select'>
+				<h1 id='filter-label'>Filters</h1>
+				
+			<div class='year-box'>
+				<h1 class="year-label">Year</h1>
+				<input id="date1" type="date" name="bday">
+				<h2 class='to-label'>to</h2>
+				<input id="date2" type="date" name="bday">
+			</div>
+
+			<div class='review-box'>
+				<h1 class="review-label">Review</h1>
+				<select id='review' name="review">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div class='rating-box'>
+				<h1 class='rating-label'>Rating</h1>
+				<img src='img/ESRB_E.png' alt="esrb"/>
+				<input type="checkbox" name="checkboxG1" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label"></label>
+				<img src='img/ESRB_T.png' alt="esrb"/>
+				<input type="checkbox" name="checkboxG2" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label"></label>
+				<img src='img/ESRB_M.png' alt="esrb"/>
+				<input type="checkbox" name="checkboxG3" id="checkboxG3" class="css-checkbox" /><label for="checkboxG3" class="css-label"></label>
+			</div>
+		</div>
 
 
 	<section class="games row">
@@ -79,10 +122,10 @@
 
 	<footer class="row">
 		<ul>
-			<li class="about-link">About us</li>
-			<li class="inc-link">Acme INC.</li>
-			<li class="face-link">Face Book</li>
-			<li class="twitter-link">Twitter</li>
+			<a href="#"><li class="about-link">About us</li></a>
+			<a href="#"><li class="inc-link">Acme INC.</li></a>
+			<a href="#"><li class="face-link"><img src='img/facebook.png' alt="facebook"/></li></a>
+			<a href="#"><li class="twitter-link"><img src='img/twitter.png' alt="twitter"/></li></a>
 		</ul>
 	</footer>
  
